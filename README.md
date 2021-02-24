@@ -1,6 +1,13 @@
 # video-dl-drive-up
 Project to download videos from the web and upload to your drive
 
+## add credentials.json
+One should create credenials.json from their google drive for a third party
+app to be able to use this script, you can enable third party apps on this
+[link](https://developers.google.com/drive/api/v3/quickstart/python). On
+step one click on the button "enable the drive api" and copy the credentials
+to credentials.json
+
 ## setup docker
 One can use docker to use this script with
 

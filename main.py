@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import pickle
@@ -80,7 +80,7 @@ def main():
     }
 
     if start_date or end_date:
-        ydl_opts.update({'date_range': DateRange(args.start_date, args.end_date)})
+        ydl_opts.update({'daterange': DateRange(args.start_date, args.end_date)})
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([args.url])
 
